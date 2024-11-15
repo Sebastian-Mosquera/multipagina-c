@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
 export function getStaticPaths() {
   return [
     {params: {news: 'clifford'}},
@@ -9,7 +10,10 @@ export function getStaticPaths() {
 }
 
 const { news } = Astro.params;
+
 ---
-<Layout>
-    El titulo de la noticia es: {news}
+
+<Layout title={news}>
+    
 </Layout>
+El titulo de la noticia es: {news}

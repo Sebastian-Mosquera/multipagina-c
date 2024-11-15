@@ -1,7 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro"
+
+const{msg='a poco si'}=Astro.props;
 ---
 
-<Layout title="Conozcámonos">
-    Esta es la sección de quienes somos.    
-</Layout> 
+
+<Layout title="Quienes somos " msg="quienes somos">
+    Esta es la seccion de quienes somos
+</Layout>
+
