@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Notification from "../components/vue/Notification.vue";
 
-const{msg='a poco si'}=Astro.props;
 ---
 
 
-<Layout title="Quienes somos " msg="quienes somos">
+<Layout title="Conozcámonos" >
     Esta es la seccion de quienes somos
+
+    <Notification client:load/>
 </Layout>
 
